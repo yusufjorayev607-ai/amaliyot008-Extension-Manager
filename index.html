@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<!-- HEADER -->
+	<div class="container">
+		<header class="header">
+			<a href="#"><img src="./images/logo.svg" alt=""></a>
+			<div class="dark-light">
+				<button class="btn light hidden" id="btn-light"><img src="./images/icon-sun.svg" alt=""></button>
+				<button class="btn dark " id="btn-dark"><img src="./images/icon-moon.svg" alt=""></button>
+			</div>
+		</header>
+		<!-- NAVIGATION -->
+		<nav class="navigation">
+			<h1>Extensions List</h1>
+			<ul>
+				<li><button class="nav all" id="all">all</button></li>
+				<li><button class="nav active" id="active">active</button></li>
+				<li><button class="nav inactive" id="inactive">inactive</button></li>
+			</ul>
+		</nav>
+		<!-- list -->
+		<div class="card-option">
+			<ul class="cardoption" id="card">
+
+			</ul>
+		</div>
+	</div>
+	<!-- Loader -->
+	<div class="overlay " id="overlay">
+		<div class="lds-ring">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<script src="./js/json.js"></script>
+	<script src="./js/mode.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
