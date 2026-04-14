@@ -12,7 +12,7 @@ async function getData() {
 	try {
 		const res = await Promise.race([
 			fetch('./data.json'),
-			timeout(8000), // 🔥 8 sekunddan oshsa to‘xtaydi
+			timeout(8000), 
 		])
 
 		const data = await res.json()
@@ -20,7 +20,7 @@ async function getData() {
 		let html = ''
 
 		data.forEach((item, index) => {
-			// 🔥 checkbox holatini olish
+			
 			const saved = localStorage.getItem(`toggle-${index}`)
 
 			html += `
